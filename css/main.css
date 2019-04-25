@@ -1,0 +1,247 @@
+/* Pallette URL: https://coolors.co/1d3e43-6a6353-262a21-9ccbbb-1d3422 */
+:root {
+	--japaneseIndigo: #1d3e43;
+	--msuGreen: #1b393d; /* MSU Green - one shade darker than Japanese Indigo - used for btn hover/focus */
+	--wenge: #6a6353; /* Wenge - a kinda gray-brown-ish color */
+	--eerieBlack: #1b1e18; /* one shade darker than Raisin Black, for the navbar gradient and btn hover/focus */
+	--raisinBlack: #262a21;
+	--turquoiseGreen: #9ccbbb;
+	--mediumJungleGreen: #1d3422;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #ffffff url('../images/background.jpg') no-repeat center center
+		fixed;
+	background-size: cover;
+}
+a {
+	color: inherit;
+}
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Navbar */
+#navbar {
+	background-image: linear-gradient(var(--eerieBlack), var(--raisinBlack));
+	margin-bottom: 56px;
+}
+#brand {
+	color: rgba(255, 255, 255, 0.6);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+#brand:hover {
+	color: rgba(255, 255, 255, 0.75);
+}
+.nav-link {
+	color: rgba(255, 255, 255, 0.6);
+}
+.logoutBtn {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.logoutBtn {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.logoutBtn:focus {
+	outline: 0;
+}
+.navbar-toggler:focus {
+	outline-color: var(--turquoiseGreen);
+}
+.navbar-toggler.collapsed:focus {
+	outline: none;
+}
+
+/* Homepage */
+#homepageJumbotron {
+	background-color: rgba(255, 255, 255, 0.75);
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: -56px;
+}
+.darkBtn {
+	background-color: var(--raisinBlack);
+	color: rgba(255, 255, 255, 0.6);
+}
+.darkBtn:hover,
+.darkBtn:focus {
+	background-color: var(--eerieBlack);
+	color: rgba(255, 255, 255, 0.5);
+	transition: background-color 1s ease-out;
+	transition: color 1s ease-out;
+	box-shadow: none;
+}
+.jIndigoBtn {
+	background-color: var(--japaneseIndigo);
+	color: rgba(255, 255, 255, 0.6);
+	margin-left: 0.5rem;
+}
+.jIndigoBtn:hover,
+.jIndigoBtn:focus {
+	background-color: var(--msuGreen);
+	color: rgba(255, 255, 255, 0.5);
+	transition: background-color 1s ease-out;
+	transition: color 1s ease-out;
+	box-shadow: none;
+}
+#homepageJumbotron a.btn {
+	width: 8.5rem;
+}
+
+/* Dashboard */
+.cardHeader {
+	font-size: 2rem;
+}
+.updatesNews {
+	margin-top: 2rem;
+}
+.matchupNow a {
+	font-size: 1.25rem;
+}
+
+/* Profile */
+.profileCardBody {
+	padding: 0 2.5rem;
+}
+.profileDiv {
+	margin: 1.5rem 0;
+}
+.profileDiv h5 {
+	margin-bottom: 1rem;
+}
+.gravatar {
+	margin-bottom: 0.25rem;
+}
+.emailIcon {
+	vertical-align: -7px;
+	margin-right: 0.5rem;
+}
+.gravatarDiv {
+	text-align: center;
+}
+.gravatarDiv a {
+	text-decoration: underline;
+}
+.profileCardBody a.btn {
+	min-width: fit-content;
+	width: 11rem;
+}
+
+/* Icons */
+.profileCardBody i,
+.editProfileCard i {
+	height: 16px;
+	width: 16px;
+	margin-right: 0.5rem;
+	color: var(--japaneseIndigo);
+}
+
+/* A light card w/ dark header, currently used for login/registration cards */
+.lightCard {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: none;
+}
+.lightCard input,
+.lightCard input:focus,
+.lightCard textarea,
+.lightCard textarea:focus {
+	background-color: rgba(0, 0, 0, 0);
+	border-color: var(--raisinBlack);
+}
+.lightCard input:focus,
+.lightCard textarea:focus {
+	box-shadow: 0 0 0 0.1rem rgba(29, 52, 34, 0.25); /* Medium Jungle Green color, 0.25 opacity */
+}
+.lightCard .card-header {
+	background-color: var(--raisinBlack);
+	color: rgba(255, 255, 255, 0.75);
+}
+
+/* Smartphones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	body {
+		min-height: 100vh;
+	}
+
+	/* Fixing col and row padding & margin overflow that was causing app to have width > viewport width, allowing the app to scroll sideways & resulting in very awk appearance */
+	.row {
+		margin: 0;
+	}
+	.col-sm-12 {
+		padding: 0;
+	}
+	.profileCardBody {
+		padding: 0 1rem;
+	}
+
+	/* Navbar */
+	#navbar {
+		margin-bottom: 0;
+	}
+	.navbar-brand {
+		margin: 0;
+	}
+
+	/* Homepage */
+	#homepageJumbotron {
+		text-align: center;
+		margin-top: 0;
+	}
+	#homepageJumbotron h1 {
+		font-size: 2rem;
+		line-height: 1.5;
+		margin-bottom: 20px;
+	}
+	#homepageJumbotron p {
+		line-height: 1.75;
+		margin-bottom: 20px;
+	}
+
+	/* Dashboard */
+	.dashLinkDiv {
+		margin: 20px 0;
+	}
+
+	/* Profile */
+	.profileCardBody {
+		text-align: center;
+	}
+
+	/* Edit profile */
+	.editProfileCard h5 {
+		text-align: center;
+	}
+
+	/* Light card */
+	.lightCard {
+		border-radius: 0;
+	}
+	.lightCard .card-header {
+		border-radius: 0;
+	}
+
+	/* Buttons */
+	.cardBtnDiv {
+		text-align: center;
+	}
+	.darkBtn,
+	.jIndigoBtn {
+		display: block;
+		width: 100% !important;
+		margin: 0;
+	}
+	.jIndigoBtn {
+		margin-top: 1rem;
+	}
+}

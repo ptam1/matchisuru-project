@@ -1,0 +1,15 @@
+{
+  "name": "smooth-criminals/mat-php",
+  "description": "Matchisuru - video game matchmaking service in PHP.",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Smooth Criminals",
+      "email": "akritskiy@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-mysqli": "*",
+    "swiftmailer/swiftmailer": "^6.0"
+  }
+}
