@@ -5,7 +5,7 @@
             <div class="card">
                 <h5 class="card-header">Games Questionnaire</h5>
                 <div class="card-body">
-                    <form action="controllers/select_games.php" method="POST" id="games_questionnaire">
+                    <form action="controllers/select_games.php" method="POST" id="game_selection">
                         <!-- Question 1 -->
                         <h5>Select Game:</h5>
                         <div>
@@ -31,12 +31,12 @@
                         <div>
                             <input type="radio" name="games-question-1" id="games-question-1-f" value="Call of Duty: Black Ops"/>
                             <label for="games-question-1-f">f. Call of Duty: Black Ops</label>
-                        <input type="button" name="next-button" value="next" onclick="location.href='controllers/games_questionnaire.php'">
+                        </div>
+                        <button name="next button" id="next button" type="submit" class="customButton">Next</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 

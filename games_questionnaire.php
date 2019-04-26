@@ -8,7 +8,7 @@
 
                     <form action="controllers/games_questionnaire.php" method="POST" id="games_questionnaire">
                         <!-- Question 2 -->
-                        <h5>2. How would you rate your average skill level for most games? (1 out of 5: 1 is lowest, 5 is highest)</h5>
+                        <h5>How would you rate your average skill level for most games? (1 out of 5: 1 is lowest, 5 is highest)</h5>
                         <div>
                             <input type="radio" name="games-question-2" id="games-question-2-a" value="1"/>
                             <label for="games-question-2-a">a. 1</label>
@@ -66,5 +66,4 @@
             </div>
         </div>
     </div>
-</div>
 </div>

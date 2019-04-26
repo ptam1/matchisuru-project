@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 require_once('partials/header.php');
 function displayMessages()
@@ -8,7 +7,6 @@ function displayMessages()
     }
 }
 ?>
-<?php require_once('partials/header.php'); ?>
     <div class="row">
         <div class="col-lg-10 col-md-10 col-sm-12 mx-auto matchupNow">
             <div class="card lightCard">
@@ -21,11 +19,6 @@ function displayMessages()
                             <!-- No Button should redirect player to the matched game page -->
                             <div class="col-xs-12 col-sm-6"><a href="#" class="btn darkBtn">No</a></div>
                         </form>
-                    <div class="row text-center mb-4">
-                        <form method="POST">
-                        <div class="col-xs-12 col-sm-6 dashLinkDiv"><a href="games_questionnaire.php" class="btn darkBtn">Yes</a></div>
-                        <div class="col-xs-12 col-sm-6"><a href="#" class="btn darkBtn">No</a></div>
-                            </form>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 22, 2019 at 02:07 AM
+-- Generation Time: Apr 26, 2019 at 06:25 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `games_questionnaire` (
   `id` int(11) NOT NULL,
+  `user_id` bigint(20) NOT NULL,
   `username` varchar(255) NOT NULL,
   `game` varchar(255) NOT NULL,
   `skill_level` varchar(255) NOT NULL,
@@ -45,7 +46,8 @@ CREATE TABLE `games_questionnaire` (
 -- Indexes for table `games_questionnaire`
 --
 ALTER TABLE `games_questionnaire`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `FK` (`user_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -55,7 +57,17 @@ ALTER TABLE `games_questionnaire`
 -- AUTO_INCREMENT for table `games_questionnaire`
 --
 ALTER TABLE `games_questionnaire`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `games_questionnaire`
+--
+ALTER TABLE `games_questionnaire`
+  ADD CONSTRAINT `FK` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
