@@ -9,7 +9,7 @@
                         <!-- Question 1 -->
                         <h5>Select Game:</h5>
                         <div>
-                            <input type="radio" name="games-question-1" id="games-question-1-a" value="Apex Legends"/>
+                            <input type="radio" name="games-question-1" id="games-question-1-a" value="Apex Legends" required/>
                             <label for="games-question-1-a">a. Apex Legends</label>
                         </div>
                         <div>

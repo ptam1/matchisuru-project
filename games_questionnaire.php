@@ -10,7 +10,7 @@
                         <!-- Question 2 -->
                         <h5>How would you rate your average skill level for most games? (1 out of 5: 1 is lowest, 5 is highest)</h5>
                         <div>
-                            <input type="radio" name="games-question-2" id="games-question-2-a" value="1"/>
+                            <input type="radio" name="games-question-2" id="games-question-2-a" value="1" required/>
                             <label for="games-question-2-a">a. 1</label>
                         </div>
                         <div>
@@ -34,7 +34,7 @@
 
                         <h5>How often do you play video games?</h5>
                         <div>
-                            <input type="radio" name="games-question-3" id="games-question-3-a" value="0-4 hours per week"/>
+                            <input type="radio" name="games-question-3" id="games-question-3-a" value="0-4 hours per week" required/>
                             <label for="games-question-3-a">a. 0-4 hours per week</label>
                         </div>
                         <div>
@@ -53,7 +53,7 @@
                         <!-- Question 4 -->
                         <h5>Would you consider yourself a beginner player?</h5>
                         <div>
-                            <input type="radio" name="games-question-4" id="games-question-4-a" value="Yes"/>
+                            <input type="radio" name="games-question-4" id="games-question-4-a" value="Yes" required/>
                             <label for="games-question-4-a">a. Yes</label>
                         </div>
                         <div>

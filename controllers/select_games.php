@@ -28,6 +28,5 @@ while($questionnaire = mysqli_fetch_assoc($result))
     }
 
 }
-
     header('location: ../games_questionnaire.php');
     exit();
